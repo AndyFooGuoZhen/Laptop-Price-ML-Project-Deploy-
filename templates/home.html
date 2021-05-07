@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Laptop Price Predictor</title>
+    <link rel="stylesheet" type="text/css" href="../static/style1.css">
+    <script src="https://kit.fontawesome.com/069c9c6dbb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class='box-1'>
+            <h1>General Laptop Price Predictor</h1>
+        </div>
+
+        <div class='box-2'>
+               <form class="myForm" method="POST" , action="{{url_for('home')}}">
+                    <div class="formss">
+                    <b>Screen Size (Inches) <br><input type="text", name='screenSize'> 
+                        <br><br>
+                       Screen Resolution 
+                       <br>
+                       <select name="ScreenRes" id="">
+                           <option value= 1>1366 x 768</option>
+                           <option value= 2>1440 x 900</option>
+                           <option value= 3>1600 x 900</option>
+                           <option value= 4>1920 x 1080</option>
+                           <option value= 5>1920 x 1200</option>
+                           <option value= 6>2160 x 1440</option>
+                           <option value= 7>2304 x 1440</option>
+                           <option value= 8>2256 x 1504</option>
+                           <option value= 9>2560 x 1440</option>
+                           <option value= 10>2400 x 1600</option>
+                           <option value= 11>2560 x 1600</option>
+                           <option value= 12>2880 x 1800</option>
+                           <option value= 13>3200 x 1800</option>
+                           <option value= 14>3840 x 2160</option>
+                       </select>
+                       <br><br>
+                       CPU
+                       <br>
+                       <select name="CPU" id="">
+                        <option value= 0>AMD A10</option>
+                        <option value= 1>AMD A12</option>
+                        <option value= 2>AMD A4</option>
+                        <option value= 3>AMD A6</option>
+                        <option value= 4>AMD A8</option>
+                        <option value= 5>AMD A9</option>
+                        <option value= 6>AMD E Series</option>
+                        <option value= 7>AMD FX Series</option>
+                        <option value= 8>AMD Ryzen </option>
+                        <option value= 9>Intel Atom </option>
+                        <option value= 10>Intel Celeron</option>
+                        <option value= 11>Intel M Series</option>
+                        <option value= 12>Intel Pentium</option>
+                        <option value= 13>Intel Xeon</option>
+                        <option value= 14>Intel Core i3</option>
+                        <option value= 15>Intel Core i5</option>
+                        <option value= 16>Intel Core i7</option>
+                        <option value= 17>Samsung ARM</option>
+                    </select>
+                    <br><br>
+                        RAM
+                        <br>
+                        <select name="RAM" id="">
+                            <option value= 2>2GB</option>
+                            <option value= 4>4GB</option>
+                            <option value= 6>6GB</option>
+                            <option value= 8>8GB</option>
+                            <option value= 12>12GB</option>
+                            <option value= 16>16GB</option>
+                            <option value= 24>24GB</option>
+                            <option value= 32>32GB</option>
+                            <option value= 64>64GB</option>
+                        </select>
+                        <br><br>
+                        Weight (in kg)
+                        <br>
+                        <input type="text", name='Weight'>
+                        <br><br>
+                
+                   
+                    Touchscreen 
+                    <br><br>
+                    <div class="radio">
+                        <input class="radio__input" type="radio" value=1 name="Touchscreen" id="myRadio1" >
+                        <label class ="radio__label" for="myRadio1">Yes</label>
+                        <input class="radio__input" type="radio" value=0 name="Touchscreen" id="myRadio2" >
+                        <label class ="radio__label" for="myRadio2">No</label> 
+                    </div>
+
+                   <br><br>
+                        HDD 
+                    <br>
+                    <select name="HDD" id="">
+                        <option value= 0>0GB</option>
+                        <option value= 32>32GB</option>
+                        <option value= 128>128GB</option>
+                        <option value= 500>500GB</option>
+                        <option value= 1000>1TB</option>
+                        <option value= 2000>2TB</option>
+                    </select>
+                    <br><br>
+                    SSD
+                    <br> 
+                    <select name="SSD" id="">
+                        <option value= 0>0GB</option>
+                        <option value= 8>8GB</option>
+                        <option value= 16>16GB</option>
+                        <option value= 32>32GB</option>
+                        <option value= 64>64GB</option>
+                        <option value= 128>128GB</option>
+                        <option value= 180>180GB</option>
+                        <option value= 240>240GB</option>
+                        <option value= 256>256GB</option>
+                        <option value= 512>512GB</option>
+                        <option value= 768>768GB</option>
+                        <option value= 1000>1TB</option>
+                    </select>
+                    <br><br>
+                    SSHD 
+                    <br>
+                    <select name="SSHD" id="">
+                        <option value= 0>0GB</option>
+                        <option value= 508>508GB</option>
+                        <option value= 1000>1TB</option>
+                    </select>
+                    <br><br>
+                    Flash Storage
+                    <br>
+                    <select name="fStorage" id="">
+                        <option value= 0>0GB</option>
+                        <option value= 16>16GB</option>
+                        <option value= 32>32GB</option>
+                        <option value= 64>64GB</option>
+                        <option value= 128>128GB</option>
+                        <option value= 256>256GB</option>
+                        <option value= 512>512GB</option>
+                    </select>
+                    <br><br>
+                
+                    Laptop Type
+                    <br><br>
+                    <div class="radio">
+                        <input class="radio__input" type="radio" value=0 name="Type" id="rad1">
+                        <label class="radio__label" for="rad1">2 in 1 Convertible</label>
+                        <input class="radio__input" type="radio" value=1 name="Type" id="rad2" >
+                        <label class="radio__label" for="rad2">Gaming</label>
+                        <input class="radio__input" type="radio" name="Type" value=2 id="rad3">
+                        <label class="radio__label" for="rad3">Netbook</label>
+                        <input class="radio__input" type="radio" name="Type" value=3 id="rad4">
+                        <label class="radio__label" for="rad4">Notebook</label> 
+                        <input class="radio__input" type="radio" name="Type" value=4 id="rad5">
+                        <label class="radio__label" for="rad5">Ultrabook</label>
+                        <input class="radio__input" type="radio" name="Type" value=5 id="rad6">
+                        <label class="radio__label" for="rad6">Workstation</label>
+                        <br><br>
+                    </div>
+                    <br><br>
+                    Operating System
+                    <br><br>
+                    <div class="radio">
+                        <input class="radio__input" type="radio" name="Os" value=4 id="r1">
+                        <label class="radio__label" for="r1">No Os</label>
+                        <input class="radio__input" type="radio" name="Os" value=0 id="r2">
+                        <label class="radio__label" for="r2">Android</label>
+                        <input class="radio__input" type="radio" name="Os" value=1 id="r3">
+                        <label class="radio__label" for="r3">Chrome OS</label>
+                        <input class="radio__input" type="radio" name="Os" value=2 id="r4">
+                        <label class="radio__label" for="r4">Linux</label>
+                        <input class="radio__input" type="radio" name="Os" value=3 id="r5">
+                        <label class="radio__label" for="r5">Mac OS X</label>
+                        <input class="radio__input" type="radio" name="Os" value=8 id="r6">
+                        <label class="radio__label" for="r6">macOS</label>
+                        <input class="radio__input" type="radio" name="Os" value=5 id="r7">
+                        <label class="radio__label" for="r7">Windows 10</label>
+                        <input class="radio__input" type="radio" name="Os" value=6 id="r8">
+                        <label class="radio__label" for="r8">Windows 10 S</label>
+                        <input class="radio__input" type="radio" name="Os" value=7 id="r9">
+                        <label class="radio__label" for="r9">Windows 7</label>
+                    </div>
+                    <br><br>
+                   
+                   <input type="submit", value='Predict'>
+                   <br><br>
+                </div>
+               </form>
+               
+       </div>
+
+             <div class="media">
+                <ul>
+                    <li><a href="https://twitter.com/Andy52372208" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/andy-guo-zhen-foo-791a58174/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/AndyFooGuoZhen" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:andy.guozhen@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+                </ul>
+            </div>
+
+             
+
+    </div>
+    
+
+    
+</body>
+</html>
