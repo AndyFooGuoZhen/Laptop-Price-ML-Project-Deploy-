@@ -5,3 +5,4 @@ numpy
 gunicorn
 joblib
 matplotlib
+xgboost
